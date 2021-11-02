@@ -1,0 +1,23 @@
+{
+  "name": "rpsls",
+  "version": "1.0.0",
+  "description": "RPSLS game simulator",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"hello\");",
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianKing27/RPSLS.git"
+  },
+  "keywords": [
+    "RPSLS"
+  ],
+  "author": "Brian King and Vladimir Greenfield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianKing27/RPSLS/issues"
+  },
+  "homepage": "https://github.com/BrianKing27/RPSLS#readme"
+}
