@@ -1,11 +1,16 @@
 "use strict";
 
-class Game {
-    constructor(points) {
-        this.points = points
+const {Player} = require("./Player");
+
+class Game 
+{
+    constructor(rules, comparedGestures, displayWinner) {
+
     }
 
-    function gameScore()
+    gameScore(){
+
+    }
 
 
 }
