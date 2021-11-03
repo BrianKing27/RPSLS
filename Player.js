@@ -1,4 +1,16 @@
-const {game} = require("./Game");
+"use strict";
 
+const{Game} = require("./Game");
 
-console.log(game);
+class Player extends Game {
+
+    constructor(name) {
+    this.name = name
+    
+}
+
+}
+
+module.exports = {
+    Player: Player
+}

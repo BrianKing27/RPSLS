@@ -1,5 +1,22 @@
-let game = "Games";
+"use strict";
+
+class Game {
+    constructor(points) {
+        this.points = points
+    }
+
+    function gameScore()
+
+
+}
+
+
+
+
+
+
+
 
 module.exports = {
-    game: game
+    Game: Game
 }
