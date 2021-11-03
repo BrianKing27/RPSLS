@@ -1,0 +1,21 @@
+{
+  "name": "rpsls",
+  "version": "1.0.0",
+  "description": "Rock, Paper, Scissor, Lizard. Spock game simulator application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianKing27/RPSLS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianKing27/RPSLS/issues"
+  },
+  "homepage": "https://github.com/BrianKing27/RPSLS#readme"
+}
