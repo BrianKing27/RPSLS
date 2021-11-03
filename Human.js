@@ -1,12 +1,12 @@
 "use strict";
-
+// npm audit fix --force
 const{Player} = require("./Player");
 const prompt = require("prompt-sync")();
 
 
 class Human extends Player {
     constructor() {
-        let humanName = prompt("Choose a name!");
+        let humanName = prompt("Choose a name!: ");
         super(humanName);   
     }
 

@@ -1,5 +1,3 @@
-let aiRPSLSs = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
-let nums = Math.floor(Math.random() * aiRPSLSs.length)
-let aiChoices = aiRPSLSs[nums];
+const {Game} = require("./Game");
 
-console.log(aiChoices);
+console.log(Human());
