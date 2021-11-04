@@ -12,6 +12,7 @@ class Human extends Player {
 
     selectedGesture(){
         this.selectedGesture =  prompt("Choose a gesture. Type the Abbr. or the number" + "/n" + "Rock: Ro/1" + "/n" + "Paper: Pa/2" + "/n" + "Scissors: Sc/3"+ "/n" + "Lizard: Li/4"+ "/n" + "Spock: Sp/5");
+        switch(this.selectedGesture())
     }
 }
 

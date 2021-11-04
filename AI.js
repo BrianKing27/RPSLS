@@ -8,11 +8,16 @@ class AI extends Player {
     }
 
     selectedGesture(){
+        
+        let num = Math.floor(Math.random() * this.gestures.length);
+        this.selectedGesture = this.gestures[num];
+       
 
-        let num = Math.floor(Math.random() * gestures.length);
-        this.selectedGesture = gestures[num];
+
     }
+
 }
+
 
 
 
