@@ -3,14 +3,15 @@
 
     class Player {
         constructor(name) {
-            this.name = name            //? done
+            this.name = name
             this.score = 0;              
-            this.selectedGesture = []; //? done
-            this.gestures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]; //? done
+            this.selectedGesture = []; 
+            this.gestures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+            this.gesturesLC = ["rock", "paper", "scissors", "lizard", "spock"];
         }
 
 }
-console.log(this.gestures)
+
 module.exports = {
     Player: Player,
 }

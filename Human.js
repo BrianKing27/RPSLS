@@ -10,9 +10,12 @@ class Human extends Player {
         super(humanName);   
     }
 
-    selectGesture(){
-        let userInput = prompt("Select one from the following: Rock, Paper, Scissors, Lizard, Spock:  ");
+    selectGesture(isError = false){
+        let userInput = prompt(`${(isError) ? 'Error!!!' : ''} Select one from the following: Rock, Paper, Scissors, Lizard, Spock:  `);
         this.selectedGesture = userInput.toLowerCase();
+        if(this.gesturesLC.indexOf(this.selectedGesture) === -1){
+            this.selectGesture(true);
+        }
         // switch(this.selectedGesture());
     }
 }

@@ -12,9 +12,13 @@ class Game {
         this.player2;
 
     }
+    selectGameType(){
+       let gameType = prompt("Select 1 for Multiplayer or 2 for single player:   ");
+       this.createMatch(gameType);
+    }
 
     createMatch(gameType = 1){
-        console.log("let's create our match, starting with players!");
+        console.log("Let's create our match, starting with players!");
         if(gameType == 2){
             this.player1 = new Human();
             this.player2 = new Human();
@@ -30,13 +34,15 @@ class Game {
     rules(){
         
         console.log("Here are the rules of the game:");
-        console.log("Rock > Scissors \nRock > Lizard \nScissors > Lizard \nScissors > Paper \nSpock > Scissors \nSpock > Rock \nPaper > Rock \nPaper > Spock \nLizard > Paper \nLizard > Spock \n\n");
+        console.log("Rock > Scissors \nRock > Lizard \nScissors > Lizard \nScissors > Paper \nSpock > Scissors \nSpock > Rock \nPaper > Rock \nPaper > Spock \nLizard > Paper \nLizard > Spock \n");
 
-
+    }   
+        
+    chooseGesture(){
         this.player1.selectGesture();
         this.player2.selectGesture();
-        console.log(this.player1.selectedGesture)
-        console.log(this.player2.selectedGesture)
+        console.log(`${this.player1.name} chose: ${this.player1.selectedGesture}`);
+        console.log(`${this.player2.name} chose: ${this.player2.selectedGesture}`);
         // this.compareGestures();
 
     }
@@ -88,17 +94,32 @@ class Game {
             this.player1.score++
         }
 
+        console.log(this.player1.name, this.player1.score);
+        console.log(this.player2.name, this.player2.score);
+        
+        if(this.player1.score < 3 && this.player2.score < 3){
+            this.playRound();
+        } else {
+            this.declareWinner();
+        }
     }
     
+    playRound(){
+        this.chooseGesture();
+        this.compareGestures();
+    }
+
+
+
     declareWinner() {
-        //Working on it
+        const winnerName = (this.player1.score === 3) ? this.player1.name : this.player2.name;
+        console.log(`The game is over! ${winnerName} WINS!!!!!!`);
     }
 
     runGame() {
-        this.createMatch();
+        this.selectGameType();
         this.rules();
-        this.compareGestures();
-        this.declareWinner();
+        this.playRound();
 
     }
 
