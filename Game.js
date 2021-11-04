@@ -41,25 +41,52 @@ class Game
         console.log(this.player2.selectedGesture)
 
 
- 
+     compareGestures(){
 
         if(this.player1.selectedGesture == this.player2.selectedGesture){
-            //tie
-        }
+            console.log("It's s TIE!!!");
+        } 
         else if(this.player1.selectedGesture == "rock"  && (this.player2.selectedGesture == "Paper" || this.player2.selectedGesture == "Spock")){
-            //player2
+            console.log(`${this.player2.name} gets one point!!!`);
+            this.player2.score++
         }
-        else if(this.player1.selectedGesture == "paper"  && (this.player2.selectedGesture == "Paper" || this.player2.selectedGesture == "Spock")){
+        else if(this.player1.selectedGesture == "paper"  && (this.player2.selectedGesture == "Scissors" || this.player2.selectedGesture == "Lizard")){
+            console.log(`${this.player2.name} gets one point!!!`);
+            this.player2.score++
 
         }
-        else if(this.player1.selectedGesture == "scissor"  && (this.player2.selectedGesture == "Paper" || this.player2.selectedGesture == "Spock")){
+        else if(this.player1.selectedGesture == "scissor"  && (this.player2.selectedGesture == "Rock" || this.player2.selectedGesture == "Spock")){
+            console.log(`${this.player2.name} gets one point!!!`);
+            this.player2.score++
+        }
+        else if(this.player1.selectedGesture == "lizardsd"  && (this.player2.selectedGesture == "Scissors" || this.player2.selectedGesture == "Rock")){
+            console.log(`${this.player2.name} gets one point!!!`);
+            this.player2.score++
+        }
+        else if(this.player1.selectedGesture == "Spock"  && (this.player2.selectedGesture == "Paper" || this.player2.selectedGesture == "Lizard")){
+            console.log(`${this.player2.name} gets one point!!!`);
+            this.player2.score++
+        }
+        else if(this.player2.selectedGesture == "rock"  && (this.player1.selectedGesture == "Paper" || this.player1.selectedGesture == "Spock")){
+            console.log(`${this.player1.name} gets one point!!!`);
+            this.player1.score++
+        }
+        else if(this.player2.selectedGesture == "paper"  && (this.player1.selectedGesture == "Scissors" || this.player1.selectedGesture == "Lizard")){
+            console.log(`${this.player1.name} gets one point!!!`);
+            this.player1.score++
 
         }
-        else if(this.player1.selectedGesture == "lizardsd"  && (this.player2.selectedGesture == "Paper" || this.player2.selectedGesture == "Spock")){
-
+        else if(this.player2.selectedGesture == "scissor"  && (this.player1.selectedGesture == "Rock" || this.player1.selectedGesture == "Spock")){
+            console.log(`${this.player1.name} gets one point!!!`);
+            this.player1.score++
         }
-        else if(this.player1.selectedGesture == "rock"  && (this.player2.selectedGesture == "Paper" || this.player2.selectedGesture == "Spock")){
-
+        else if(this.player2.selectedGesture == "lizardsd"  && (this.player1.selectedGesture == "Scissors" || this.player1.selectedGesture == "Rock")){
+            console.log(`${this.player1.name} gets one point!!!`);
+            this.player1.score++
+        }
+        else if(this.player2.selectedGesture == "Spock"  && (this.player1.selectedGesture == "Paper" || this.player1.selectedGesture == "Lizard")){
+            console.log(`${this.player1.name} gets one point!!!`);
+            this.player1.score++
         }
 
     }
