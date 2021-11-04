@@ -1,2 +1,7 @@
+"use strict";
+
 const {Game} = require("./Game");
-console.log("Hello");
+
+
+let myGame = new Game();
+myGame.runGame();

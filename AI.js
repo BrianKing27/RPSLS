@@ -6,18 +6,18 @@ class AI extends Player {
         let AIname = "User" + Math.floor(Math.random(1) * 100000) + 1;
         super(AIname);
     }
+    
 
-    selectedGesture(){
+    selectGesture(){
         
         let num = Math.floor(Math.random() * this.gestures.length);
-        this.selectedGesture = this.gestures[num];
+        this.selectedGesture = this.gestures[num].toLowerCase();
        
 
 
     }
-
+    
 }
-
 
 
 

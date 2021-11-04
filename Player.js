@@ -6,7 +6,7 @@
             this.name = name            //? done
             this.score = 0;              
             this.selectedGesture = []; //? done
-            this.gestures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];; //? done
+            this.gestures = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]; //? done
         }
 
 }
