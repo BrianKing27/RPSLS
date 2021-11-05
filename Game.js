@@ -13,7 +13,7 @@ class Game {
 
     }
     selectGameType(){
-       let gameType = prompt("Select 1 for Multiplayer or 2 for single player:   ");
+       let gameType = prompt("Select 1 for Single player or 2 for Multiplayer:   ");
        this.createMatch(gameType);
     }
 
